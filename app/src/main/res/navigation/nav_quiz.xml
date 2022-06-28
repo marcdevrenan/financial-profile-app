@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_quiz"
+    app:startDestination="@+id/quiz1">
+
+    <fragment
+        android:id="@+id/quiz1"
+        android:name="br.edu.infnet.financialprofileapp.Quiz1"
+        android:label="frag_q1"
+        tools:layout="@layout/frag_q1">
+
+        <action
+            android:id="@+id/action_quiz1_to_quiz2"
+            app:destination="@+id/quiz2" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz2"
+        android:name="br.edu.infnet.financialprofileapp.Quiz2"
+        android:label="frag_q2"
+        tools:layout="@layout/frag_q2">
+
+        <action
+            android:id="@+id/action_quiz2_to_quiz3"
+            app:destination="@+id/quiz3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quiz3"
+        android:name="br.edu.infnet.financialprofileapp.Quiz3"
+        android:label="frag_q3"
+        tools:layout="@layout/frag_q3">
+
+        <action
+            android:id="@+id/action_quiz3_to_quiz4"
+            app:destination="@+id/quiz4" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz4"
+        android:name="br.edu.infnet.financialprofileapp.Quiz4"
+        android:label="frag_q4"
+        tools:layout="@layout/frag_q4">
+
+        <action
+            android:id="@+id/action_quiz4_to_quiz5"
+            app:destination="@+id/quiz5" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz5"
+        android:name="br.edu.infnet.financialprofileapp.Quiz5"
+        android:label="frag_q5"
+        tools:layout="@layout/frag_q5">
+
+        <action
+            android:id="@+id/action_quiz5_to_quiz6"
+            app:destination="@+id/quiz6" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz6"
+        android:name="br.edu.infnet.financialprofileapp.Quiz6"
+        android:label="frag_q6"
+        tools:layout="@layout/frag_q6">
+
+        <action
+            android:id="@+id/action_quiz6_to_quiz7"
+            app:destination="@+id/quiz7" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz7"
+        android:name="br.edu.infnet.financialprofileapp.Quiz7"
+        android:label="frag_q7"
+        tools:layout="@layout/frag_q7">
+
+        <action
+            android:id="@+id/action_quiz7_to_quiz8"
+            app:destination="@+id/quiz8" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz8"
+        android:name="br.edu.infnet.financialprofileapp.Quiz8"
+        android:label="frag_q8"
+        tools:layout="@layout/frag_q8">
+
+        <action
+            android:id="@+id/action_quiz8_to_quiz9"
+            app:destination="@+id/quiz9" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz9"
+        android:name="br.edu.infnet.financialprofileapp.Quiz9"
+        android:label="frag_q9"
+        tools:layout="@layout/frag_q9">
+
+        <action
+            android:id="@+id/action_quiz9_to_QuizResult"
+            app:destination="@+id/quizResult" />
+    </fragment>
+    <activity
+        android:id="@+id/quizResult"
+        android:name="br.edu.infnet.financialprofileapp.QuizResult"
+        android:label="quiz_result"
+        tools:layout="@layout/activity_quiz_result" />
+</navigation>

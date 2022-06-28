@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="Quiz2">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="br.edu.infnet.financialprofileapp.MainCore" />
+
+        <variable
+            name="q2Frag"
+            type="br.edu.infnet.financialprofileapp.Quiz2" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/q2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_alternative_a" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_alternative_b" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_alternative_c" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_alternative_d" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/avancar_btn_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
